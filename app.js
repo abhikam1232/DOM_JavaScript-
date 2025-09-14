@@ -67,4 +67,8 @@ for ( let i=0; i<text.length; i++){
     text[i].style.color ="white";
 }
 
+let img = document.querySelector("#mainImg");
+img.style.width = "300px";
+img.style.boxShadow = "0 0px 2px 5px orange";
+
 
