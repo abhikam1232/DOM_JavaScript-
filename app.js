@@ -131,3 +131,19 @@ descp.innerHTML = `<b> Origin: </b> Bitten by radioActive Spider Peter parker ga
 let myImage = document.querySelector("#mainImg");
 myImage.setAttribute("alt", "Spiderman Swininging through the city");
 myImage.setAttribute("src", "assets/creation_3.jpeg");
+
+// Select all <b> (bold) elements on the page and use JavaScript to:
+// Change their text color to orange.
+// Increase their font size to 22px.
+
+let bolder = document.querySelectorAll("b");
+for ( let i=0; i<=bolder.length; i++){
+    bolder[i].style.color = "orange";
+    bolder[i].style.fontSize = "22px";
+}
+// spider emoji:-
+let header = document.querySelectorAll("h2");
+
+for ( let i=0; i<header.length; i++){
+    header[i].innerText += " 🕷️";
+}
