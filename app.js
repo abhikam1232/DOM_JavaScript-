@@ -72,3 +72,24 @@ img.style.width = "300px";
 img.style.boxShadow = "0 0px 2px 5px orange";
 
 
+let head = document.querySelector("h1");
+console.dir(head);
+head.innerText = "Spider Peter parker";
+head.innerHTML = "<u> Spider Peter Parker </u>";
+
+//Select the first <p> tag on your page and use innerText to change its text to:
+// "Spider-Man is also known as Peter Parker."
+
+let paragraph = document.querySelector("p");
+console.dir(paragraph);
+paragraph.innerText = "SpiderMan is also known as Peter Parker";
+
+// Select the <div> with the class box and use innerHTML to replace its content with this HTML:
+
+let box = document.querySelector(".box");
+console.dir(box);
+box.innerHTML = ` <h4>Alter Ego</h4>
+<ul>
+  <li>Peter Parker</li>
+  <li>Miles Morales</li>
+</ul>`;
