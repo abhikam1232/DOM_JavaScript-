@@ -86,10 +86,48 @@ paragraph.innerText = "SpiderMan is also known as Peter Parker";
 
 // Select the <div> with the class box and use innerHTML to replace its content with this HTML:
 
-let box = document.querySelector(".box");
-console.dir(box);
-box.innerHTML = ` <h4>Alter Ego</h4>
-<ul>
-  <li>Peter Parker</li>
-  <li>Miles Morales</li>
-</ul>`;
+
+
+// Manipulating Attributes.. 
+let picture = document.querySelector("img");
+console.dir(picture);
+console.dir(picture.style);
+
+let heading = document.querySelector("h1");
+console.dir(heading.style);
+heading.style.fontSize = " 25px";
+heading.style.color = "maroon";
+heading.style.backgroundColor = " yellow";
+
+// Changing the anchor tags color to yellow as well as making it in italic form:- 
+let anchors = document.querySelectorAll(".box a");
+
+for ( let i=0; i<anchors.length; i++){
+    anchors[i].style.color= "yellow";
+    anchors[i].style.fontStyle  = "italic";
+}
+
+
+// Select all <li> elements inside the .box div and:
+// Change their text color to green.
+// Make their text bold.
+
+let links = document.querySelectorAll(".box li");
+
+for ( let i=0; i<links.length; i++){
+    links[i].style.color = "green";
+    links[i].style.fontWeight = "bold";
+}
+
+// Select the element with the id description and use innerHTML to add the following content:
+let descp = document.querySelector("#description");
+console.dir(descp);
+descp.innerHTML = `<b> Origin: </b> Bitten by radioActive Spider Peter parker gained superhuman abilities and become a SpiderMan`;
+
+// Select the <img> element with the id mainImg and use JavaScript to:
+//Change its alt attribute to "Spider-Man swinging through the city".
+//Change its src attribute to "assets/spiderman_alt.png" (make sure this image exists in your assets folder).
+
+let myImage = document.querySelector("#mainImg");
+myImage.setAttribute("alt", "Spiderman Swininging through the city");
+myImage.setAttribute("src", "assets/creation_3.jpeg");
