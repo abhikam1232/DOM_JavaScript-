@@ -187,3 +187,13 @@ button1.innerText = "DOM here Please Click";
 
 let box = document.querySelector(".box");
 box.appendChild(button1);
+
+// Creating a new class and deleting it...
+newPara.classList;
+console.dir(newPara);
+console.log(newPara.classList);
+newPara.classList.add("classA");
+newPara.classList.toggle("classB");
+// Now we removed that class:- 
+newPara.classList.toggle("classA");
+
