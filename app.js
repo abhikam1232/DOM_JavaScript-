@@ -197,3 +197,10 @@ newPara.classList.toggle("classB");
 // Now we removed that class:- 
 newPara.classList.toggle("classA");
 
+
+// Creating new button in the body:- 
+
+let newButton = document.createElement("button");
+newButton.innerText = "New Button Here !!";
+
+body.appendChild(newButton);
