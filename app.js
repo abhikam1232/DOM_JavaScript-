@@ -72,10 +72,10 @@ img.style.width = "300px";
 img.style.boxShadow = "0 0px 2px 5px orange";
 
 
-let head = document.querySelector("h1");
+/** let head = document.querySelector("h1");
 console.dir(head);
 head.innerText = "Spider Peter parker";
-head.innerHTML = "<u> Spider Peter Parker </u>";
+head.innerHTML = "<u> Spider Peter Parker </u>"; **/
 
 //Select the first <p> tag on your page and use innerText to change its text to:
 // "Spider-Man is also known as Peter Parker."
@@ -93,11 +93,11 @@ let picture = document.querySelector("img");
 console.dir(picture);
 console.dir(picture.style);
 
-let heading = document.querySelector("h1");
+/** let heading = document.querySelector("h1");
 console.dir(heading.style);
 heading.style.fontSize = " 25px";
 heading.style.color = "maroon";
-heading.style.backgroundColor = " yellow";
+heading.style.backgroundColor = " yellow"; **/
 
 // Changing the anchor tags color to yellow as well as making it in italic form:- 
 let anchors = document.querySelectorAll(".box a");
@@ -132,18 +132,58 @@ let myImage = document.querySelector("#mainImg");
 myImage.setAttribute("alt", "Spiderman Swininging through the city");
 myImage.setAttribute("src", "assets/creation_3.jpeg");
 
-// Select all <b> (bold) elements on the page and use JavaScript to:
-// Change their text color to orange.
-// Increase their font size to 22px.
+// Adding elements to the html page:- 
 
-let bolder = document.querySelectorAll("b");
-for ( let i=0; i<=bolder.length; i++){
-    bolder[i].style.color = "orange";
-    bolder[i].style.fontSize = "22px";
-}
-// spider emoji:-
-let header = document.querySelectorAll("h2");
+let newPara = document.querySelector("p");
+console.dir(newPara);
+let body = document.querySelector("body");
+newPara.innerText = " I am learning webdev from Apna college ";
+body.appendChild(newPara);
 
-for ( let i=0; i<header.length; i++){
-    header[i].innerText += " 🕷️";
-}
+// Add a New Heading
+// Create an <h2> element.
+// Add text: "JavaScript DOM Practice".
+// Append it to the body.
+
+
+let newHead = document.createElement("h2");
+newHead.innerText = " JavaScript DOM Practice";
+body.appendChild(newHead);
+
+
+//Add Multiple List Items
+/** Create an <ul>.
+Add 3 <li> items: "HTML", "CSS", "JavaScript".
+Append the list to the body. **/
+
+let un = document.createElement("ul");
+
+let li = document.createElement("li");
+li.innerText = "HTML DONE";
+
+let li2 = document.createElement("li")
+li2.innerText = "CSS DOne";
+
+let li3 = document.createElement("li");
+li3.innerText = "JavaScript Ongoing";
+
+body.appendChild(li);
+body.appendChild(li2);
+body.appendChild(li3);
+
+// Image task:- 
+let newImage = document.querySelector("img");
+newImage.setAttribute("src", "assets/creation_3.jpeg");
+let imageSection = document.querySelector(".images");
+imageSection.appendChild(newImage);
+
+console.dir(newImage);
+newImage.classList;
+newImage.classList.add("newClass");
+
+// Create a newButton tasks:- 
+let button1 = document.createElement("button");
+button1.innerText = "DOM here Please Click";
+
+let box = document.querySelector(".box");
+box.appendChild(button1);

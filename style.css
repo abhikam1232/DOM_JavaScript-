@@ -2,6 +2,8 @@ body {
   font-family: Arial;
 }
 
+
+
 #mainImg {
   width: 35%;
   height: 550px;
@@ -18,6 +20,11 @@ body {
   text-decoration: none;
 }
 
+.yellow{
+  color:brown;
+  background-color: rgb(158, 199, 76);
+}
+
 .oldImg {
   height: 200px;
   width: 200px;
@@ -26,4 +33,31 @@ body {
 
 #description {
   background-color: antiquewhite;
+}
+
+.purple {
+  color: purple;
+  background-color: rgb(157, 157, 207);
+}
+
+.underline {
+  text-decoration: underline black wavy;
+}
+
+.highlight {
+  background-color: yellowgreen;
+  color: black;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.active {
+  border: 2px solid green;
+  background-color: #eaffea;
+  transition: background 0.3s;
+}
+
+newClass {
+  width: 20px;
+  height: 20px;
 }
