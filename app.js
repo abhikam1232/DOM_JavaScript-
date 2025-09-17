@@ -204,3 +204,15 @@ let newButton = document.createElement("button");
 newButton.innerText = "New Button Here !!";
 
 body.appendChild(newButton);
+
+// select h1 and change its text to " dom is powerful";
+let newHeader = document.querySelector("h1");
+console.dir(newHeader);
+newHeader.innerText = " DOM IS POWERFUL";
+
+newHeader.style.color = "purple";
+newHeader.style.borderWidth = "2px";
+newHeader.style.borderStyle = "solid";
+newHeader.style.borderRadius = "5px";
+newHeader.style.borderColor = "maroon";
+newHeader.style.paddingLeft = " 30px";
