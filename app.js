@@ -244,8 +244,22 @@ myUnorder.appendChild(newList);
 // Append it inside a <div> using appendChild().
 // Set its width and border.
 
-let imageBox = document.auerySelector(".images");
+let imageBox = document.querySelector(".images");
 let newImg = document.createElement("img");
 newImg.setAttribute("src", "./assets/marvel.avif");
 
 imageBox.appendChild(newImg);
+newImg.style.height = "20px";
+newImg.style.width = "20px";
+
+// Task 3: Add a span to an existing paragraph
+/** Select a <p> element.
+Create a new <span> element with text " - Extra Info".
+Use para.append(span) to attach it to the paragraph.
+Style the span with different color and bold font. **/
+
+let mySpan = document.createElement("span");
+console.dir(mySpan);
+
+mySpan.innerText = "-- Extra Info ";
+para.appendChild(mySpan);
