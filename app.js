@@ -273,3 +273,16 @@ console.dir(todayHead.classList);
 todayHead.classList.toggle("tittle");
 
 console.dir(todayHead.classList);
+
+// Select any <p> element.
+// Add a class named "info" to it.
+// Use classList.contains("info") and console.log() the result.
+// If the class exists, also change its text color to "blue".
+// 👉 This will help you practice checking for classes and using them conditionally.
+
+let par = document.querySelector("p");
+console.log(par.classList);
+par.classList.add("info");
+par.classList.contains("info");
+
+
