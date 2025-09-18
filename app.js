@@ -285,4 +285,9 @@ console.log(par.classList);
 par.classList.add("info");
 par.classList.contains("info");
 
+// Creating one more button for practice:- 
+let newBtn = document.createElement("button");
+newBtn.innerText = "1st Click here ";
 
+let mySecond = document.querySelector(".info");
+mySecond.appendChild(newBtn);
