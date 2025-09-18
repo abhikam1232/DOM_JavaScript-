@@ -263,3 +263,13 @@ console.dir(mySpan);
 
 mySpan.innerText = "-- Extra Info ";
 para.appendChild(mySpan);
+
+// Dealing with class Lists... 
+let todayHead = document.querySelector("h1");
+console.dir(todayHead.classList);
+todayHead.classList.add("heading1");
+todayHead.classList.add("tittle");
+console.dir(todayHead.classList);
+todayHead.classList.toggle("tittle");
+
+console.dir(todayHead.classList);
