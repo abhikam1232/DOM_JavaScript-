@@ -216,3 +216,24 @@ newHeader.style.borderStyle = "solid";
 newHeader.style.borderRadius = "5px";
 newHeader.style.borderColor = "maroon";
 newHeader.style.paddingLeft = " 30px";
+
+// Creating new button again... 
+let Button2 = document.querySelector("button");
+Button2.innerText = " Don't click here";
+
+let para = document.querySelector("p");
+
+para.appendChild(Button2);
+Button2.style.marginLeft = "20px";
+
+// Task 1: Add a new list item to an existing <ul>
+/** Select an unordered list <ul> in your HTML.
+Create a new <li> element with text "New Item Added".
+Append this <li> to the <ul>.
+Style it (e.g., background color, padding). **/
+
+let myUnorder = document.querySelector("ul");
+let newList = document.createElement("li");
+newList.innerText = "New Item Added";
+
+myUnorder.appendChild(newList);
