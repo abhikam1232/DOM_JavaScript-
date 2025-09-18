@@ -237,3 +237,15 @@ let newList = document.createElement("li");
 newList.innerText = "New Item Added";
 
 myUnorder.appendChild(newList);
+
+// Task 2: Add an image inside a <div>
+// Create a new <img> element.
+// Set its src to any image link (e.g., "https://picsum.photos/200").
+// Append it inside a <div> using appendChild().
+// Set its width and border.
+
+let imageBox = document.auerySelector(".images");
+let newImg = document.createElement("img");
+newImg.setAttribute("src", "./assets/marvel.avif");
+
+imageBox.appendChild(newImg);
