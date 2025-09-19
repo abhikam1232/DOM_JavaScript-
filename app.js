@@ -348,6 +348,17 @@ Caption.style.fontStyle = "italic";
 
 newPart.append(newHeroimage, Caption);
 
+// using prepend element but this adds on the top of the webPage:-
+
+let webBody = document.querySelector("body");
+
+let pageBtn = document.createElement("button");
+pageBtn.innerText = "Top Click";
+
+webBody.prepend(pageBtn);  // This is basically used to add on the top of the page:- 
+
+
+
 
 
 
