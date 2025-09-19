@@ -306,4 +306,25 @@ newSpan.style.color = "purple";
 
 headingSector.append(" Welcome to the club", newSpan); // Combining multiple text and elements together...
 
+// Appending multiple lists together..
+
+let codeLists = document.querySelector("ul");
+
+let list1 = document.createElement("li");
+list1.innerText = "NodeJs";
+
+let list2 = document.createElement("li");
+list2.innerText = "MongoDB";
+
+let list3 = document.createElement("li");
+list3.innerText = "React";
+
+codeLists.append(list1, list2, list3); // Appended the list items 
+
+console.dir(codeLists.classList);
+codeLists.classList.add("aclass"); // Just a demo class added.. 
+
+codeLists.classList.add("lists"); // A class already created in the css 
+
+
 

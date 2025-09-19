@@ -62,3 +62,9 @@ newClass {
   height: 20px;
 }
 
+
+.lists {
+  color: aqua;
+  background-color: rgb(59, 59, 155);
+  font-size: 0.9em;
+}
