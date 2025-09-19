@@ -357,6 +357,30 @@ pageBtn.innerText = "Top Click";
 
 webBody.prepend(pageBtn);  // This is basically used to add on the top of the page:- 
 
+// Creting and alert banner on the top of the page:- 
+let alertBanner = document.createElement("div");
+alertBanner.innerText = " 🚨 System Maintenance: 2:00 AM - 4:00 AM";
+alertBanner.style.color = "Crimson";
+alertBanner.style.backgroundColor = " PeachPuff";
+alertBanner.style.borderWidth = "2px";
+alertBanner.style.borderColor = "maroon";
+alertBanner.style.borderStyle = "solid";
+alertBanner.style.borderRadius = "5px";
+alertBanner.style.textAlign = "center"; 
+alertBanner.style.fontSize = " 1.22em";
+alertBanner.style.marginBottom = " 10px";
+
+webBody.prepend(alertBanner);
+
+
+// This is basically an comment section thant I am using over her 
+
+// Hi i am lalit nanwani currently in final year of b tech 
+
+
+
+webBody.prepend(alertBanner);
+
 
 
 
