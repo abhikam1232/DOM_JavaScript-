@@ -291,3 +291,19 @@ newBtn.innerText = "1st Click here ";
 
 let mySecond = document.querySelector(".info");
 mySecond.appendChild(newBtn);
+
+// Now using append function:- 
+
+let newP = document.querySelector("p");
+newP.append(" This is new content added over here");
+
+// Now I am appending text as well as elements together in my code:- 
+let headingSector = document.querySelector("h1");
+
+let newSpan = document.createElement("span");
+newSpan.innerText = "I am the new span element";
+newSpan.style.color = "purple";
+
+headingSector.append(" Welcome to the club", newSpan); // Combining multiple text and elements together...
+
+
