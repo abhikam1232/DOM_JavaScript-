@@ -326,5 +326,28 @@ codeLists.classList.add("aclass"); // Just a demo class added..
 
 codeLists.classList.add("lists"); // A class already created in the css 
 
+// Now we append the image as well as caption together..
+
+let newPart = document.querySelector(".newSection");
+
+let newHeroimage = document.createElement("img");
+newHeroimage.src = "./assets/superheroes.jpg";
+newHeroimage.style.width = "250px";
+newHeroimage.style.height = " 200px";
+newHeroimage.style.borderWidth = "2px";
+newHeroimage.style.borderColor = "green";
+newHeroimage.style.borderStyle = "solid";
+newHeroimage.style.marginLeft = "20px";
+newHeroimage.style.marginTop = "20px";
+
+
+
+let Caption = document.createElement("p");
+Caption.innerText = "Animated Superheroes";
+Caption.style.fontStyle = "italic";
+
+newPart.append(newHeroimage, Caption);
+
+
 
 
