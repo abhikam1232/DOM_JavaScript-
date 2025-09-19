@@ -373,15 +373,12 @@ alertBanner.style.marginBottom = " 10px";
 webBody.prepend(alertBanner);
 
 
-// This is basically an comment section thant I am using over her 
+// In this part I am using insertAdjacent:- 
+let headerTool = document.querySelector("h1");
 
-// Hi i am lalit nanwani currently in final year of b tech 
-
-
-
-webBody.prepend(alertBanner);
-
-
+let uniqueBtn = document.createElement("button");
+uniqueBtn.innerText = " UNIQUE !!";
+headerTool.insertAdjacentElement("afterend", uniqueBtn);
 
 
 
