@@ -424,4 +424,7 @@ heading2.insertAdjacentElement("afterend", p2);
 let infoClass = document.querySelector(".info");
 infoClass.removeChild(newBtn); 
 
+// Now directly removing an element:- 
+newP.remove();
+
 
