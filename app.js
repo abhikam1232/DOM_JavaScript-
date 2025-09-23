@@ -493,3 +493,10 @@ let newHeader1 = document.createElement("h1");
 newHeader1.innerText = " DOM Practice ";
 pageBody.append(newHeader1);
 newHeader1.style.textDecoration = "underline";
+
+// Create a new page tag..
+let newPtag = document.createElement("p");
+newPtag.innerHTML = "Apna college <b> delta </b> Prcatice";  // Instead of using innerText we will use InnerHTMl so that we can make the delta text to bolder in the string itself.. 
+pageBody.append(newPtag);
+
+// Basicallt the tags which are created in the innerHTML works
