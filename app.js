@@ -380,6 +380,16 @@ let uniqueBtn = document.createElement("button");
 uniqueBtn.innerText = " UNIQUE !!";
 headerTool.insertAdjacentElement("afterend", uniqueBtn);
 
+// insert adjacent part 2; 
 
+let Mypara = document.querySelector("p");
+
+console.dir(Mypara);
+
+let paraBTN = document.createElement("button");
+paraBTN.innerText = "Paragraph BTN!! ";
+
+// Now we want to add the button before the paragraph..
+Mypara.insertAdjacentElement("beforebegin", paraBTN);
 
 
