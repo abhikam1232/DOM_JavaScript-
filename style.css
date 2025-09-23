@@ -79,3 +79,8 @@ newClass {
   border-radius: 5px;
   background-color: pink;
 }
+
+.btncolor {
+  color: white;
+  background-color: blue;
+}

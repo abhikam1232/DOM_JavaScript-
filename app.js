@@ -467,4 +467,22 @@ body.append(myDiv);
 myDiv.append(myHead1);
 myDiv.append(newParagraph);
 
+// Create a new input and button element on the page using JavAscript only..
+let newInput = document.createElement("input");
+let myBUTTON = document.createElement("button");
+newInput.innerText = "New input using newInput";
+newInput.style.margin = "10px";
+myBUTTON.innerText = "New Click Sir!!";
+
+// Two things are created.. 
+
+body.append(newInput);
+body.append(myBUTTON);
+
+//  Add the following Attributes.. 
+    // Change the placeholder value of input to "username";
+    // Chnage the id of button to "btn";
+
+myBUTTON.setAttribute("id", "btn");
+newInput.getAttribute("placeholder", "username");
 
