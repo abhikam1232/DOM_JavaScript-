@@ -395,5 +395,29 @@ Mypara.insertAdjacentElement("beforebegin", paraBTN);
 // Now creating a button after the paragraph...
 let paraBTN2 = document.createElement("button");
 paraBTN2.innerText = "After Button";
+paraBTN2.style.marginBottom = "5px";
 
-Mypara.insertAdjacentElement("afterbegin", paraBTN2);
+Mypara.insertAdjacentElement("afterend", paraBTN2);
+
+//Select the <h2> element you created earlier with the text "JavaScript DOM Practice".
+// Using insertAdjacentHTML() –
+// Add a <p> tag before it with the text:
+// "This is an intro paragraph before the heading."
+
+// Add another <p> tag after it with the text:
+//"This is an additional paragraph after the heading."
+
+let heading2 = document.querySelector("h2");
+console.dir(heading2);
+
+let p1 = document.createElement("p");
+p1.innerText = " This is an intro para before heading";
+
+heading2.insertAdjacentElement("beforebegin", p1);
+
+let p2 = document.createElement("p");
+p2.innerText = " This is an after intro para";
+
+heading2.insertAdjacentElement("afterend", p2);
+
+
