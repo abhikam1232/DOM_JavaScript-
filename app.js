@@ -392,4 +392,8 @@ paraBTN.innerText = "Paragraph BTN!! ";
 // Now we want to add the button before the paragraph..
 Mypara.insertAdjacentElement("beforebegin", paraBTN);
 
+// Now creating a button after the paragraph...
+let paraBTN2 = document.createElement("button");
+paraBTN2.innerText = "After Button";
 
+Mypara.insertAdjacentElement("afterbegin", paraBTN2);
