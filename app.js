@@ -445,3 +445,26 @@ header3.classList.add("headerThree");
 
 body.append(header3);
 header3.style.textAlign = "center";
+
+// A div with black border and pink background color with following elements inside it.. 
+// Another h1 that says " I am a div";
+// A p that says "Me Too";
+
+let myDiv = document.createElement("div");
+
+// Now creating h1 which will be inside the div 
+let myHead1 = document.createElement("h1");
+myHead1.innerText = "I am a div";
+
+let newParagraph = document.createElement("p");
+newParagraph.innerText = " ME TOO !!! ";
+
+// Now I am going to add the class in that new Created div..
+console.dir(myDiv.classList);
+
+myDiv.classList.add("newDiv"); // Now I have added the class which i have created in css..
+body.append(myDiv);
+myDiv.append(myHead1);
+myDiv.append(newParagraph);
+
+

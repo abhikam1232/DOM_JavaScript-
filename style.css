@@ -72,3 +72,10 @@ newClass {
 .headerThree{
   color: rgb(20, 20, 116);
 }
+
+.newDiv {
+  border-width: 2px;
+  border-color: black;
+  border-radius: 5px;
+  background-color: pink;
+}
