@@ -420,4 +420,8 @@ p2.innerText = " This is an after intro para";
 
 heading2.insertAdjacentElement("afterend", p2);
 
+// Now Removing an element:- 
+let infoClass = document.querySelector(".info");
+infoClass.removeChild(newBtn); 
+
 
