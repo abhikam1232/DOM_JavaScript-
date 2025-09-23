@@ -486,3 +486,10 @@ body.append(myBUTTON);
 myBUTTON.setAttribute("id", "btn");
 newInput.getAttribute("placeholder", "username");
 
+// Create an h1 element on the page and set it's page to " dom practice" and underline.. change it's color to purple 
+
+let pageBody = document.querySelector("body");
+let newHeader1 = document.createElement("h1");
+newHeader1.innerText = " DOM Practice ";
+pageBody.append(newHeader1);
+newHeader1.style.textDecoration = "underline";
