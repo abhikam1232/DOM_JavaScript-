@@ -427,4 +427,21 @@ infoClass.removeChild(newBtn);
 // Now directly removing an element:- 
 newP.remove();
 
+// Practice question 1. Add hey I am red as a para to the body:- 
 
+let paragraph2 = document.createElement("p");
+paragraph.innerText = "Hey I am red into this para";
+body.append(paragraph2);
+
+// Practice Question 3. An h3 with blue text says Hii I am blue:- 
+
+let header3 = document.createElement("h3");
+header3.innerText = "Hii I am BLUE !!! ";
+
+console.dir(header3.classList);
+header3.classList.add("headerThree");
+
+// Now we will apend it ;
+
+body.append(header3);
+header3.style.textAlign = "center";
